@@ -17,6 +17,6 @@ jobs:
      runs-on: ubuntu-latest
      steps: 
        - name: hallo
-         run: echo "hallo ${{ input.enviroment}}"
+         run: echo "hallo ${{ inputs.enviroment}}"
          
         
