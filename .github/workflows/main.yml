@@ -1,0 +1,12 @@
+name: frworkflow
+on: 
+  workflow_dispatch:
+
+jobs:
+   event:
+     runs-on: ubuntu
+     steps: 
+       - name: hallo
+         run: echo"hallo sero"
+         
+        
