@@ -1,12 +1,22 @@
 name: frworkflow
 on: 
   workflow_dispatch:
+    inputs:
+          enviroment:
+            description: "event"
+            default: "seha"
+            type: choice
+            options:
+              - sero
+              - seho
+              
+
 
 jobs:
    event:
      runs-on: ubuntu-latest
      steps: 
        - name: hallo
-         run: echo "hallo sero"
+         run: echo "hallo ${{ input.enviroment}}"
          
         
