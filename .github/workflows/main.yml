@@ -4,9 +4,9 @@ on:
 
 jobs:
    event:
-     runs-on: ubuntu
+     runs-on: ubuntu-latest
      steps: 
        - name: hallo
-         run: echo"hallo sero"
+         run: echo "hallo sero"
          
         
